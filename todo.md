@@ -3,9 +3,10 @@
                                   - creation table status
                                   - 
 
-- setup : installer les dependances , configures ton fichier d'environnement (comme env poour les accees a la ) 
+- setup : installer les dependances , configures ton fichier d'environnement (comme env poour les accees a la ) [ok]
+- sqlite3 database.db < ton_fichier.sql [ok]
 - BDD : preparer le structure qui va accueillir tes donnees 
-- migration [ok]
-- seeder : remplir ta base de donnees avec des donnees de test automatiquement 
+- migration [ok] : php spark migrate
+- seeder : remplir ta base de donnees avec des donnees de test automatiquement : php spark db:seed FitspaceSeeder.php
 - routes 
 - squelette : architecture base 

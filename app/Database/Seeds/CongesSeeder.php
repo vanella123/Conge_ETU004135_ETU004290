@@ -75,7 +75,11 @@ class CongesSeeder extends Seeder
 
         // Insertion avec ignore si existe
         foreach ($data as $row) {
-            $this->db->table('departments')->insert($row);
+            try {
+                $this->db->table('departments')->insert($row);
+            } catch (\Exception $e) {
+                // Ignore si déjà existe (contrainte UNIQUE)
+            }
         }
 
         echo "✓ Départements insérés\n";
@@ -125,7 +129,11 @@ class CongesSeeder extends Seeder
         ];
 
         foreach ($data as $row) {
-            $this->db->table('leave_types')->insert($row);
+            try {
+                $this->db->table('leave_types')->insert($row);
+            } catch (\Exception $e) {
+                // Ignore si déjà existe (contrainte UNIQUE)
+            }
         }
 
         echo "✓ Types de congé insérés\n";
@@ -265,7 +273,11 @@ class CongesSeeder extends Seeder
         ];
 
         foreach ($data as $row) {
-            $this->db->table('users')->insert($row);
+            try {
+                $this->db->table('users')->insert($row);
+            } catch (\Exception $e) {
+                // Ignore si déjà existe (contrainte UNIQUE sur email)
+            }
         }
 
         echo "✓ Utilisateurs insérés\n";
@@ -308,7 +320,11 @@ class CongesSeeder extends Seeder
 
         // Batch insert pour performance
         if (!empty($data)) {
-            $this->db->table('leave_balances')->insertBatch($data);
+            try {
+                $this->db->table('leave_balances')->insertBatch($data);
+            } catch (\Exception $e) {
+                // Ignore les doublons
+            }
         }
 
         echo "✓ Soldes de congés insérés (" . count($data) . " entrées)\n";
@@ -391,7 +407,11 @@ class CongesSeeder extends Seeder
         ];
 
         foreach ($data as $row) {
-            $this->db->table('leave_requests')->insert($row);
+            try {
+                $this->db->table('leave_requests')->insert($row);
+            } catch (\Exception $e) {
+                // Ignore les doublons
+            }
         }
 
         echo "✓ Demandes de congé (exemples) insérées (" . count($data) . " entrées)\n";

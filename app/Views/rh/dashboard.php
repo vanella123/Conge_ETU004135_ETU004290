@@ -15,7 +15,7 @@
                 <i class="bi bi-hourglass-split"></i>
             </div>
         </div>
-        <div class="metric-val">0</div>
+        <div class="metric-val"><?= $demandes_attente ?? 0 ?></div>
         <div class="metric-label">En attente</div>
     </div>
     
@@ -25,7 +25,7 @@
                 <i class="bi bi-check-circle"></i>
             </div>
         </div>
-        <div class="metric-val">0</div>
+        <div class="metric-val"><?= $approuvees_total ?? 0 ?></div>
         <div class="metric-label">Approuvées</div>
     </div>
     
@@ -35,7 +35,7 @@
                 <i class="bi bi-x-circle"></i>
             </div>
         </div>
-        <div class="metric-val">0</div>
+        <div class="metric-val"><?= $refusees_total ?? 0 ?></div>
         <div class="metric-label">Refusées</div>
     </div>
     
@@ -45,7 +45,7 @@
                 <i class="bi bi-people"></i>
             </div>
         </div>
-        <div class="metric-val">0</div>
+        <div class="metric-val"><?= $employes_total ?? 0 ?></div>
         <div class="metric-label">Employés</div>
     </div>
 </div>

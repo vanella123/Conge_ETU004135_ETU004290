@@ -2,10 +2,10 @@
 
 namespace App\Controllers\Rh;
 
-use CodeIgniter\Controller;
+use App\Controllers\BaseController;
 use App\Models\UserModel;
 
-class EmployesController extends Controller
+class EmployesController extends BaseController
 {
     protected $userModel;
 

@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\UserModel;
-use CodeIgniter\Controller;
+use App\Controllers\BaseController;
 
 /**
  * AuthController
@@ -15,7 +15,7 @@ use CodeIgniter\Controller;
  *   - rh       → /rh/dashboard
  *   - admin    → /admin/dashboard
  */
-class AuthController extends Controller
+class AuthController extends BaseController
 {
     // ----------------------------------------------------------------
     // GET  /login

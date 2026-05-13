@@ -2,11 +2,11 @@
 
 namespace App\Controllers\Employe;
 
-use CodeIgniter\Controller;
+use App\Controllers\BaseController;
 use App\Models\LeaveRequestModel;
 use App\Models\LeaveTypeModel;
 
-class CongeController extends Controller
+class CongeController extends BaseController
 {
     protected $leaveRequestModel;
     protected $leaveTypeModel;
@@ -26,7 +26,9 @@ class CongeController extends Controller
         $userId = session('user_id');
 
         $conges = $this->leaveRequestModel
-            ->where('employe_id', $userId)
+            ->select('leave_requests.*, leave_types.nom AS type_nom')
+            ->join('leave_types', 'leave_types.id = leave_requests.leave_type_id', 'left')
+            ->where('user_id', $userId)
             ->orderBy('date_debut', 'DESC')
             ->findAll();
 
@@ -42,7 +44,10 @@ class CongeController extends Controller
             return redirect()->to('/login');
         }
 
-        $types_conges = $this->leaveTypeModel->findAll();
+        $types_conges = $this->leaveTypeModel
+            ->where('actif', 1)
+            ->orderBy('libelle', 'ASC')
+            ->findAll();
 
         return view('employe/demande', [
             'title'        => 'Nouvelle Demande de Congés',
@@ -70,22 +75,33 @@ class CongeController extends Controller
                 ->with('errors', $this->validator->getErrors());
         }
 
-        $userId  = session('user_id');
-        $debut   = $this->request->getPost('date_debut');
-        $fin     = $this->request->getPost('date_fin');
+        $userId = (int) session('user_id');
+        $typeId = (int) $this->request->getPost('type_conge_id');
+        $debut  = (string) $this->request->getPost('date_debut');
+        $fin    = (string) $this->request->getPost('date_fin');
 
-        // Calculer le nombre de jours (jours ouvrables)
+        if ($debut > $fin) {
+            return redirect()->back()->withInput()->with('error', 'La date de début doit être antérieure à la date de fin.');
+        }
+
         $nb_jours = $this->calculateWorkingDays($debut, $fin);
 
+        $soldeCheck = $this->leaveBalanceModel->checkSolde($userId, $typeId, (int) date('Y', strtotime($debut)), $nb_jours);
+        if (! $soldeCheck['ok']) {
+            return redirect()->back()->withInput()->with('error', $soldeCheck['message']);
+        }
+
         $data = [
-            'employe_id'    => $userId,
-            'type_conge_id' => $this->request->getPost('type_conge_id'),
-            'date_debut'    => $debut,
-            'date_fin'      => $fin,
-            'nb_jours'      => $nb_jours,
-            'motif'         => $this->request->getPost('motif'),
-            'commentaire'   => $this->request->getPost('commentaire'),
-            'status'        => 'en_attente',
+            'user_id'        => $userId,
+            'leave_type_id'   => $typeId,
+            'date_debut'      => $debut,
+            'date_fin'        => $fin,
+            'nb_jours'        => $nb_jours,
+            'motif'           => $this->request->getPost('motif'),
+            'statut'          => 'en_attente',
+            'commentaire_rh'  => null,
+            'traite_par'      => null,
+            'traite_le'       => null,
         ];
 
         if ($this->leaveRequestModel->save($data)) {
@@ -103,20 +119,24 @@ class CongeController extends Controller
             return redirect()->to('/login');
         }
 
-        $userId = session('user_id');
+        $userId = (int) session('user_id');
         $leave  = $this->leaveRequestModel->find($id);
 
-        if (!$leave || $leave['employe_id'] != $userId) {
+        if (!$leave || (int) $leave['user_id'] !== $userId) {
             return redirect()->back()
                 ->with('error', 'Demande non trouvée ou accès refusé.');
         }
 
-        if ($leave['status'] !== 'en_attente') {
+        if ($leave['statut'] !== 'en_attente') {
             return redirect()->back()
                 ->with('error', 'Seules les demandes en attente peuvent être annulées.');
         }
 
-        if ($this->leaveRequestModel->delete($id)) {
+        $this->leaveRequestModel->update($id, [
+            'statut' => 'annulee',
+        ]);
+
+        if (true) {
             return redirect()->to('employe/conges')
                 ->with('success', 'Demande annulée.');
         }

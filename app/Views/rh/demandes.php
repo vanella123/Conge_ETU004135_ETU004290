@@ -62,9 +62,9 @@
                 <tr>
                     <td class="td-name">
                         <span class="avatar av-green">
-                            <?= strtoupper(substr($demande['employe_nom'], 0, 2)) ?>
+                            <?= strtoupper(substr($demande['emp_nom'] ?? '', 0, 2)) ?>
                         </span>
-                        <span style="margin-left: 8px;"><?= esc($demande['employe_nom']) ?></span>
+                        <span style="margin-left: 8px;"><?= esc(($demande['emp_nom'] ?? '') . ' ' . ($demande['emp_prenom'] ?? '')) ?></span>
                     </td>
                     <td>
                         <span class="type-badge t-annuel">
@@ -85,11 +85,11 @@
                     <td>
                         <div class="action-btns">
                             <button type="button" class="btn-sm btn-approve" 
-                                    onclick="approuverDemande(<?= $demande['id'] ?>, '<?= esc($demande['employe_nom']) ?>')">
+                                    onclick="approuverDemande(<?= $demande['id'] ?>, '<?= esc(($demande['emp_nom'] ?? '') . ' ' . ($demande['emp_prenom'] ?? '')) ?>')">
                                 <i class="bi bi-check-circle"></i>
                             </button>
                             <button type="button" class="btn-sm btn-refuse" 
-                                    onclick="refuserDemande(<?= $demande['id'] ?>, '<?= esc($demande['employe_nom']) ?>')">
+                                    onclick="refuserDemande(<?= $demande['id'] ?>, '<?= esc(($demande['emp_nom'] ?? '') . ' ' . ($demande['emp_prenom'] ?? '')) ?>')">
                                 <i class="bi bi-x-circle"></i>
                             </button>
                         </div>

@@ -2,11 +2,11 @@
 
 namespace App\Controllers\Admin;
 
-use CodeIgniter\Controller;
+use App\Controllers\BaseController;
 use App\Models\UserModel;
 use App\Models\LeaveBalanceModel;
 
-class EmployeController extends Controller
+class EmployeController extends BaseController
 {
     protected $userModel;
     protected $leaveBalanceModel;

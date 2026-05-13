@@ -60,15 +60,15 @@
                 <span class="solde-type"><?= esc($solde['type_nom']) ?></span>
                 <span class="solde-nums">
                     <strong><?= round($solde['jours_pris'], 1) ?></strong> / 
-                    <?= round($solde['jours_total'], 1) ?>
+                    <?= round($solde['jours_attribues'], 1) ?>
                 </span>
             </div>
             <div class="solde-bar">
-                <div class="solde-fill <?= $solde['jours_pris'] > ($solde['jours_total'] * 0.8) ? 'warn' : '' ?>" 
-                     style="width: <?= min(100, ($solde['jours_pris'] / $solde['jours_total']) * 100) ?>%"></div>
+                <div class="solde-fill <?= $solde['jours_pris'] > ($solde['jours_attribues'] * 0.8) ? 'warn' : '' ?>" 
+                     style="width: <?= $solde['jours_attribues'] > 0 ? min(100, ($solde['jours_pris'] / $solde['jours_attribues']) * 100) : 0 ?>%"></div>
             </div>
             <div class="solde-label">
-                <?= round($solde['jours_total'] - $solde['jours_pris'], 1) ?> jour(s) restant(s)
+                <?= round($solde['jours_restants'], 1) ?> jour(s) restant(s)
             </div>
         </div>
         <?php endforeach; ?>
@@ -108,13 +108,13 @@
                     </td>
                     <td class="td-mono"><?= $conge['nb_jours'] ?> j.</td>
                     <td>
-                        <span class="statut s-<?= strtolower($conge['status']) ?>">
-                            <?= ucfirst($conge['status']) ?>
+                        <span class="statut s-<?= str_replace('_', '', strtolower($conge['statut'])) ?>">
+                            <?= ucfirst(str_replace('_', ' ', $conge['statut'])) ?>
                         </span>
                     </td>
                     <td>
                         <div class="action-btns">
-                            <?php if($conge['status'] === 'en_attente'): ?>
+                            <?php if($conge['statut'] === 'en_attente'): ?>
                             <a href="<?= base_url('employe/conges/annuler/' . $conge['id']) ?>" 
                                class="btn-sm btn-cancel" 
                                onclick="return confirm('Annuler cette demande ?')">

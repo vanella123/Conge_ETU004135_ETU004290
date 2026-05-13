@@ -12,14 +12,11 @@
 
 use CodeIgniter\Router\RouteCollection;
 /** @var RouteCollection $routes */
-$routes->get('connexion', 'EmployeController::login');
-$routes->post('connexion', 'EmployeController::checkEmployeExist');
 
-$routes->get('login', 'EmployeController::login');
-$routes->post('login', 'EmployeController::checkEmployeExist');
-
-$routes->get('deconnexion', 'EmployeController::deconnexion', ['filter' => 'auth']);
-$routes->get('logout', 'EmployeController::deconnexion', ['filter' => 'auth']);
+// Aliases de compatibilité avec l'ancienne structure
+$routes->get('connexion', 'AuthController::loginForm');
+$routes->post('connexion', 'AuthController::loginAction');
+$routes->get('deconnexion', 'AuthController::logout');
 // ----------------------------------------------------------------
 // Page d'accueil → redirection vers login
 // ----------------------------------------------------------------
@@ -65,15 +62,15 @@ $routes->group('rh', ['filter' => 'auth|role:rh,admin'], function ($routes) {
     $routes->get('dashboard', 'Rh\DashboardController::index');
 
     // Gestion des demandes
-    $routes->get('demandes',                 'Rh\DemandesController::index');
+    $routes->get('demandes', 'Rh\DemandesController::index');
     $routes->post('demandes/approuver', 'Rh\DemandesController::approuver');
-    $routes->post('demandes/refuser',   'Rh\DemandesController::refuser');
+    $routes->post('demandes/refuser', 'Rh\DemandesController::refuser');
 
     // Gestion des employés
-    $routes->get('employes',            'Rh\EmployesController::index');
+    $routes->get('employes', 'Rh\EmployesController::index');
     
     // Soldes employés
-    $routes->get('soldes',              'Rh\SoldeController::index');
+    $routes->get('soldes', 'Rh\SoldeController::index');
 });
 
 // ================================================================
@@ -93,20 +90,20 @@ $routes->group('admin', ['filter' => 'auth|role:admin'], function ($routes) {
     $routes->get('employes/desactiver/(:num)', 'Admin\EmployeController::deactivate/$1');
 
     // --- Gestion des départements ---
-    $routes->get('departements',           'Admin\DepartementController::index');
-    $routes->post('departements/ajouter',  'Admin\DepartementController::store');
-    $routes->post('departements/edit/(:num)',   'Admin\DepartementController::update/$1');
+    $routes->get('departements', 'Admin\DepartementController::index');
+    $routes->post('departements/ajouter', 'Admin\DepartementController::store');
+    $routes->post('departements/edit/(:num)', 'Admin\DepartementController::update/$1');
     $routes->get('departements/supprimer/(:num)', 'Admin\DepartementController::delete/$1');
 
     // --- Types de congé ---
-    $routes->get('types-conge',           'Admin\TypeCongeController::index');
-    $routes->post('types-conge/ajouter',  'Admin\TypeCongeController::store');
+    $routes->get('types-conge', 'Admin\TypeCongeController::index');
+    $routes->post('types-conge/ajouter', 'Admin\TypeCongeController::store');
     $routes->post('types-conge/edit/(:num)', 'Admin\TypeCongeController::update/$1');
 
     // --- Soldes annuels ---
-    $routes->get('soldes',        'Admin\SoldeController::index');
+    $routes->get('soldes', 'Admin\SoldeController::index');
     $routes->post('soldes/initialiser', 'Admin\SoldeController::initialize');
 
     // --- Vue globale des demandes ---
-    $routes->get('demandes',      'Admin\DemandeController::index');
+    $routes->get('demandes', 'Admin\DemandeController::index');
 });

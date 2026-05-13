@@ -38,8 +38,8 @@
                     </td>
                     <td class="td-mono"><?= $conge['nb_jours'] ?> j.</td>
                     <td>
-                        <span class="statut s-<?= strtolower(str_replace('_', '', $conge['status'])) ?>">
-                            <?= str_replace('_', ' ', ucfirst($conge['status'])) ?>
+                        <span class="statut s-<?= str_replace('_', '', strtolower($conge['statut'])) ?>">
+                            <?= str_replace('_', ' ', ucfirst($conge['statut'])) ?>
                         </span>
                     </td>
                     <td class="td-muted" style="font-size: 0.8rem;">
@@ -53,7 +53,7 @@
                     </td>
                     <td>
                         <div class="action-btns">
-                            <?php if($conge['status'] === 'en_attente'): ?>
+                            <?php if($conge['statut'] === 'en_attente'): ?>
                             <a href="<?= base_url('employe/conges/annuler/' . $conge['id']) ?>" 
                                class="btn-sm btn-cancel" 
                                onclick="return confirm('Êtes-vous sûr ?')">

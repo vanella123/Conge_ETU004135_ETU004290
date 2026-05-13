@@ -18,15 +18,15 @@
                 </div>
                 <span class="solde-nums">
                     <strong><?= round($solde['jours_pris'], 1) ?></strong> / 
-                    <?= round($solde['jours_total'], 1) ?>
+                    <?= round($solde['jours_attribues'], 1) ?>
                 </span>
             </div>
             <div class="solde-bar">
-                <div class="solde-fill <?= $solde['jours_pris'] > ($solde['jours_total'] * 0.8) ? 'danger' : ($solde['jours_pris'] > ($solde['jours_total'] * 0.5) ? 'warn' : '') ?>" 
-                     style="width: <?= min(100, ($solde['jours_pris'] / $solde['jours_total']) * 100) ?>%"></div>
+                <div class="solde-fill <?= $solde['jours_pris'] > ($solde['jours_attribues'] * 0.8) ? 'danger' : ($solde['jours_pris'] > ($solde['jours_attribues'] * 0.5) ? 'warn' : '') ?>" 
+                     style="width: <?= $solde['jours_attribues'] > 0 ? min(100, ($solde['jours_pris'] / $solde['jours_attribues']) * 100) : 0 ?>%"></div>
             </div>
             <div style="display: flex; justify-content: space-between; margin-top: 0.75rem; font-size: 0.75rem; color: var(--muted);">
-                <span><strong><?= round($solde['jours_total'] - $solde['jours_pris'], 1) ?></strong> jour(s) restant(s)</span>
+                <span><strong><?= round($solde['jours_restants'], 1) ?></strong> jour(s) restant(s)</span>
                 <span>Utilisés: <?= round($solde['jours_pris'], 1) ?></span>
             </div>
         </div>

@@ -2,11 +2,11 @@
 
 namespace App\Controllers\Employe;
 
-use CodeIgniter\Controller;
+use App\Controllers\BaseController;
 use App\Models\LeaveRequestModel;
 use App\Models\LeaveBalanceModel;
 
-class DashboardController extends Controller
+class DashboardController extends BaseController
 {
     protected $leaveRequestModel;
     protected $leaveBalanceModel;
@@ -26,39 +26,35 @@ class DashboardController extends Controller
         $userId = session('user_id');
         $year   = date('Y');
 
-        // Récupérer les statistiques de l'employé
         $conges_total = $this->leaveRequestModel
-            ->where('employe_id', $userId)
-            ->where('YEAR(date_debut)', $year)
+            ->where('user_id', $userId)
+            ->like('date_debut', $year, 'after')
             ->countAllResults();
 
         $conges_approuves = $this->leaveRequestModel
-            ->where('employe_id', $userId)
-            ->where('status', 'approuvee')
-            ->where('YEAR(date_debut)', $year)
+            ->where('user_id', $userId)
+            ->where('statut', 'approuvee')
+            ->like('date_debut', $year, 'after')
             ->countAllResults();
 
         $conges_attente = $this->leaveRequestModel
-            ->where('employe_id', $userId)
-            ->where('status', 'en_attente')
-            ->where('YEAR(date_debut)', $year)
+            ->where('user_id', $userId)
+            ->where('statut', 'en_attente')
+            ->like('date_debut', $year, 'after')
             ->countAllResults();
 
         $conges_refuses = $this->leaveRequestModel
-            ->where('employe_id', $userId)
-            ->where('status', 'refusee')
-            ->where('YEAR(date_debut)', $year)
+            ->where('user_id', $userId)
+            ->where('statut', 'refusee')
+            ->like('date_debut', $year, 'after')
             ->countAllResults();
 
-        // Récupérer les soldes de congés
-        $soldes = $this->leaveBalanceModel
-            ->where('employe_id', $userId)
-            ->where('annee', $year)
-            ->findAll();
+        $soldes = $this->leaveBalanceModel->getByUser((int) $userId, (int) $year);
 
-        // Derniers congés
         $derniers_conges = $this->leaveRequestModel
-            ->where('employe_id', $userId)
+            ->select('leave_requests.*, leave_types.nom AS type_nom')
+            ->join('leave_types', 'leave_types.id = leave_requests.leave_type_id', 'left')
+            ->where('user_id', $userId)
             ->orderBy('created_at', 'DESC')
             ->limit(5)
             ->findAll();

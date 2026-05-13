@@ -2,9 +2,9 @@
 
 namespace App\Controllers\Admin;
 
-use CodeIgniter\Controller;
+use App\Controllers\BaseController;
 
-class DashboardController extends Controller
+class DashboardController extends BaseController
 {
     public function index()
     {

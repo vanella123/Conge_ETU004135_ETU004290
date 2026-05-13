@@ -2,10 +2,10 @@
 
 namespace App\Controllers\Employe;
 
-use CodeIgniter\Controller;
+use App\Controllers\BaseController;
 use App\Models\LeaveBalanceModel;
 
-class SoldeController extends Controller
+class SoldeController extends BaseController
 {
     protected $leaveBalanceModel;
 
@@ -20,13 +20,10 @@ class SoldeController extends Controller
             return redirect()->to('/login');
         }
 
-        $userId = session('user_id');
+        $userId = (int) session('user_id');
         $year   = date('Y');
 
-        $soldes = $this->leaveBalanceModel
-            ->where('employe_id', $userId)
-            ->where('annee', $year)
-            ->findAll();
+        $soldes = $this->leaveBalanceModel->getByUser($userId, (int) $year);
 
         return view('employe/soldes', [
             'title'  => 'Mes Soldes de Congés',

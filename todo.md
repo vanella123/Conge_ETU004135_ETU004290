@@ -2,3 +2,10 @@
 - Soumettre une demande de conge : - creation de table demande 
                                   - creation table status
                                   - 
+
+- setup : installer les dependances , configures ton fichier d'environnement (comme env poour les accees a la ) 
+- BDD : preparer le structure qui va accueillir tes donnees 
+- migration [ok]
+- seeder : remplir ta base de donnees avec des donnees de test automatiquement 
+- routes 
+- squelette : architecture base 

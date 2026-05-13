@@ -26,11 +26,11 @@ class Database extends Config
      */
     public array $default = [
         'DSN'          => '',
-        'hostname'     => '127.0.0.1',
-        'username'     => 'root',
+        'hostname'     => '',
+        'username'     => '',
         'password'     => '',
-        'database'     => 'Regime_DB',
-        'DBDriver'     => 'MySQLi',
+        'database'     => WRITEPATH . 'conge.db',
+        'DBDriver'     => 'SQLite3',
         'DBPrefix'     => '',
         'pConnect'     => false,
         'DBDebug'      => true,
@@ -41,7 +41,7 @@ class Database extends Config
         'compress'     => false,
         'strictOn'     => false,
         'failover'     => [],
-        'port'         => 3306,
+        'port'         => '',
         'numberNative' => false,
         'foundRows'    => false,
         'dateFormat'   => [

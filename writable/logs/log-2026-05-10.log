@@ -1,0 +1,1938 @@
+ERROR - 2026-05-10 02:43:54 --> Table 'Regime_DB.v_commande_regime' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:43:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'Regime_DB.v_commande_regime' doesn't exist
+[Method: GET, Route: mes-regimes]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:43:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'Regime_DB.v_commande_regime' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 310.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:43:54 --> [Caused by] mysqli_sql_exception: Table 'Regime_DB.v_commande_regime' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+ERROR - 2026-05-10 02:43:54 --> Table 'Regime_DB.v_commande_regime' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:43:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'Regime_DB.v_commande_regime' doesn't exist
+[Method: GET, Route: mes-regimes]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:43:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'Regime_DB.v_commande_regime' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 310.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:43:54 --> [Caused by] mysqli_sql_exception: Table 'Regime_DB.v_commande_regime' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+ERROR - 2026-05-10 02:44:01 --> Table 'Regime_DB.v_regime_duree' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/RegimeModel.php(118): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:44:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'Regime_DB.v_regime_duree' doesn't exist
+[Method: GET, Route: regimes]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/RegimeModel.php(118): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:44:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'Regime_DB.v_regime_duree' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 310.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/RegimeModel.php(118): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:44:01 --> [Caused by] mysqli_sql_exception: Table 'Regime_DB.v_regime_duree' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/RegimeModel.php(118): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+ERROR - 2026-05-10 02:46:15 --> Table 'Regime_DB.v_regime_duree' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/RegimeModel.php(118): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:46:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'Regime_DB.v_regime_duree' doesn't exist
+[Method: GET, Route: regimes]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/RegimeModel.php(118): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:46:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'Regime_DB.v_regime_duree' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 310.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/RegimeModel.php(118): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:46:15 --> [Caused by] mysqli_sql_exception: Table 'Regime_DB.v_regime_duree' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/RegimeModel.php(118): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+ERROR - 2026-05-10 02:46:19 --> Table 'Regime_DB.v_commande_regime' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:46:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'Regime_DB.v_commande_regime' doesn't exist
+[Method: GET, Route: mes-regimes]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:46:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'Regime_DB.v_commande_regime' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 310.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:46:19 --> [Caused by] mysqli_sql_exception: Table 'Regime_DB.v_commande_regime' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+ERROR - 2026-05-10 02:49:46 --> Table 'Regime_DB.v_commande_regime' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:49:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'Regime_DB.v_commande_regime' doesn't exist
+[Method: GET, Route: mes-regimes]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:49:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'Regime_DB.v_commande_regime' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 310.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:49:46 --> [Caused by] mysqli_sql_exception: Table 'Regime_DB.v_commande_regime' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+ERROR - 2026-05-10 02:49:51 --> Table 'Regime_DB.v_commande_regime' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:49:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'Regime_DB.v_commande_regime' doesn't exist
+[Method: GET, Route: mes-regimes]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:49:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'Regime_DB.v_commande_regime' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 310.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:49:51 --> [Caused by] mysqli_sql_exception: Table 'Regime_DB.v_commande_regime' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+ERROR - 2026-05-10 02:50:42 --> Table 'Regime_DB.v_commande_regime' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:50:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'Regime_DB.v_commande_regime' doesn't exist
+[Method: GET, Route: mes-regimes]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:50:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'Regime_DB.v_commande_regime' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 310.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:50:42 --> [Caused by] mysqli_sql_exception: Table 'Regime_DB.v_commande_regime' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+ERROR - 2026-05-10 02:50:48 --> Table 'Regime_DB.v_regime_duree' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/RegimeModel.php(118): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:50:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'Regime_DB.v_regime_duree' doesn't exist
+[Method: GET, Route: regimes]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/RegimeModel.php(118): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:50:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'Regime_DB.v_regime_duree' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 310.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/RegimeModel.php(118): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:50:48 --> [Caused by] mysqli_sql_exception: Table 'Regime_DB.v_regime_duree' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/RegimeModel.php(118): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+ERROR - 2026-05-10 02:55:12 --> Unknown column 'r.variation_mensuelle_kg' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/RegimeModel.php(119): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:55:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r.variation_mensuelle_kg' in 'field list'
+[Method: GET, Route: regimes]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/RegimeModel.php(119): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:55:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r.variation_mensuelle_kg' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 310.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/RegimeModel.php(119): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:55:12 --> [Caused by] mysqli_sql_exception: Unknown column 'r.variation_mensuelle_kg' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/RegimeModel.php(119): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+ERROR - 2026-05-10 02:55:13 --> Unknown column 'r.variation_mensuelle_kg' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/RegimeModel.php(119): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:55:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r.variation_mensuelle_kg' in 'field list'
+[Method: GET, Route: regimes]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/RegimeModel.php(119): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:55:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r.variation_mensuelle_kg' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 310.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/RegimeModel.php(119): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:55:13 --> [Caused by] mysqli_sql_exception: Unknown column 'r.variation_mensuelle_kg' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/RegimeModel.php(119): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+ERROR - 2026-05-10 02:55:20 --> Unknown column 'r.variation_mensuelle_kg' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/RegimeModel.php(119): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:55:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r.variation_mensuelle_kg' in 'field list'
+[Method: GET, Route: regimes]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/RegimeModel.php(119): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:55:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r.variation_mensuelle_kg' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 310.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/RegimeModel.php(119): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:55:20 --> [Caused by] mysqli_sql_exception: Unknown column 'r.variation_mensuelle_kg' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/RegimeModel.php(119): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(47): App\Models\RegimeModel->getFilteredList()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+ERROR - 2026-05-10 02:55:41 --> Unknown column 'r.variation_mensuelle_kg' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:55:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r.variation_mensuelle_kg' in 'field list'
+[Method: GET, Route: mes-regimes]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:55:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r.variation_mensuelle_kg' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 310.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-10 02:55:41 --> [Caused by] mysqli_sql_exception: Unknown column 'r.variation_mensuelle_kg' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/CommandeModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/RegimeController.php(310): App\Models\CommandeModel->getPurchasedRegimesByUserId()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->myRegimes()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+ERROR - 2026-05-10 13:29:50 --> Table 'regime_db.admin' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `admin`
+WHERE `email` = \'jean@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `admin`
+WHERE `email` = \'jean@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `admin`
+WHERE `email` = \'jean@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\AdminModel.php(17): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\AdminController.php(19): App\Models\AdminModel->checkAdmin('jean@gmail.com', 'jean123')
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminController->authenticate()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 13:29:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'regime_db.admin' doesn't exist
+[Method: POST, Route: admin/authenticate]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\AdminModel.php(17): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\AdminController.php(19): App\Models\AdminModel->checkAdmin('jean@gmail.com', 'jean123')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminController->authenticate()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 13:29:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'regime_db.admin' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `admin`
+WHERE `email` = \'jean@gmail.com\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `admin`
+WHERE `email` = \'jean@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\AdminModel.php(17): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\AdminController.php(19): App\Models\AdminModel->checkAdmin('jean@gmail.com', 'jean123')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminController->authenticate()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 13:29:50 --> [Caused by] mysqli_sql_exception: Table 'regime_db.admin' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `admin`
+WHERE `email` = \'jean@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `admin`
+WHERE `email` = \'jean@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `admin`
+WHERE `email` = \'jean@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\AdminModel.php(17): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\AdminController.php(19): App\Models\AdminModel->checkAdmin('jean@gmail.com', 'jean123')
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminController->authenticate()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+ERROR - 2026-05-10 13:30:27 --> Table 'regime_db.admin' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `admin`
+WHERE `email` = \'admin@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `admin`
+WHERE `email` = \'admin@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `admin`
+WHERE `email` = \'admin@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\AdminModel.php(17): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\AdminController.php(19): App\Models\AdminModel->checkAdmin('admin@gmail.com', 'admin123')
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminController->authenticate()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 13:30:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'regime_db.admin' doesn't exist
+[Method: POST, Route: admin/authenticate]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\AdminModel.php(17): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\AdminController.php(19): App\Models\AdminModel->checkAdmin('admin@gmail.com', 'admin123')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminController->authenticate()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 13:30:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'regime_db.admin' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `admin`
+WHERE `email` = \'admin@gmail.com\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `admin`
+WHERE `email` = \'admin@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\AdminModel.php(17): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\AdminController.php(19): App\Models\AdminModel->checkAdmin('admin@gmail.com', 'admin123')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminController->authenticate()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 13:30:27 --> [Caused by] mysqli_sql_exception: Table 'regime_db.admin' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `admin`
+WHERE `email` = \'admin@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `admin`
+WHERE `email` = \'admin@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `admin`
+WHERE `email` = \'admin@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\AdminModel.php(17): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\AdminController.php(19): App\Models\AdminModel->checkAdmin('admin@gmail.com', 'admin123')
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminController->authenticate()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+ERROR - 2026-05-10 13:33:54 --> Unknown column 'r.variation_poids' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_poids`, `r`.`pourcentage_viande`, `r`.`pourcentage_poisson`, `r`.`pourcentage_volaille`, `d`.`id_duree_regime`, `d`.`nb_jours`, `d`.`prix`
+FROM `regime` `r`
+LEFT JOIN `duree_regime` `d` ON `d`.`id_regime` = `r`.`id_regime`
+ORDER BY `r`.`id_regime` DESC, `d`.`nb_jours` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_poids`, `r`.`pourcentage_viande`, `r`.`pourcentage_poisson`, `r`.`pourcentage_volaille`, `d`.`id_duree_regime`, `d`.`nb_jours`, `d`.`prix`
+FROM `regime` `r`
+LEFT JOIN `duree_regime` `d` ON `d`.`id_regime` = `r`.`id_regime`
+ORDER BY `r`.`id_regime` DESC, `d`.`nb_jours` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_poids`, `r`.`pourcentage_viande`, `r`.`pourcentage_poisson`, `r`.`pourcentage_volaille`, `d`.`id_duree_regime`, `d`.`nb_jours`, `d`.`prix`
+FROM `regime` `r`
+LEFT JOIN `duree_regime` `d` ON `d`.`id_regime` = `r`.`id_regime`
+ORDER BY `r`.`id_regime` DESC, `d`.`nb_jours` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_poids`, `r`.`pourcentage_viande`, `r`.`pourcentage_poisson`, `r`.`pourcentage_volaille`, `d`.`id_duree_regime`, `d`.`nb_jours`, `d`.`prix`
+FROM `regime` `r`
+LEFT JOIN `duree_regime` `d` ON `d`.`id_regime` = `r`.`id_regime`
+ORDER BY `r`.`id_regime` DESC, `d`.`nb_jours` ASC', [], false)
+ 5 APPPATH\Controllers\AdminRegimeController.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminRegimeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminRegimeController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 13:33:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r.variation_poids' in 'field list'
+[Method: GET, Route: admin/regimes]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_poids`, `r`.`pourcentage_viande`, `r`.`pourcentage_poisson`, `r`.`pourcentage_volaille`, `d`.`id_duree_regime`, `d`.`nb_jours`, `d`.`prix`
+FROM `regime` `r`
+LEFT JOIN `duree_regime` `d` ON `d`.`id_regime` = `r`.`id_regime`
+ORDER BY `r`.`id_regime` DESC, `d`.`nb_jours` ASC', [], false)
+ 2 APPPATH\Controllers\AdminRegimeController.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminRegimeController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminRegimeController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 13:33:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r.variation_poids' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_poids`, `r`.`pourcentage_viande`, `r`.`pourcentage_poisson`, `r`.`pourcentage_volaille`, `d`.`id_duree_regime`, `d`.`nb_jours`, `d`.`prix`
+FROM `regime` `r`
+LEFT JOIN `duree_regime` `d` ON `d`.`id_regime` = `r`.`id_regime`
+ORDER BY `r`.`id_regime` DESC, `d`.`nb_jours` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_poids`, `r`.`pourcentage_viande`, `r`.`pourcentage_poisson`, `r`.`pourcentage_volaille`, `d`.`id_duree_regime`, `d`.`nb_jours`, `d`.`prix`
+FROM `regime` `r`
+LEFT JOIN `duree_regime` `d` ON `d`.`id_regime` = `r`.`id_regime`
+ORDER BY `r`.`id_regime` DESC, `d`.`nb_jours` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_poids`, `r`.`pourcentage_viande`, `r`.`pourcentage_poisson`, `r`.`pourcentage_volaille`, `d`.`id_duree_regime`, `d`.`nb_jours`, `d`.`prix`
+FROM `regime` `r`
+LEFT JOIN `duree_regime` `d` ON `d`.`id_regime` = `r`.`id_regime`
+ORDER BY `r`.`id_regime` DESC, `d`.`nb_jours` ASC', [], false)
+ 4 APPPATH\Controllers\AdminRegimeController.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminRegimeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminRegimeController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 13:33:54 --> [Caused by] mysqli_sql_exception: Unknown column 'r.variation_poids' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_poids`, `r`.`pourcentage_viande`, `r`.`pourcentage_poisson`, `r`.`pourcentage_volaille`, `d`.`id_duree_regime`, `d`.`nb_jours`, `d`.`prix`
+FROM `regime` `r`
+LEFT JOIN `duree_regime` `d` ON `d`.`id_regime` = `r`.`id_regime`
+ORDER BY `r`.`id_regime` DESC, `d`.`nb_jours` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_poids`, `r`.`pourcentage_viande`, `r`.`pourcentage_poisson`, `r`.`pourcentage_volaille`, `d`.`id_duree_regime`, `d`.`nb_jours`, `d`.`prix`
+FROM `regime` `r`
+LEFT JOIN `duree_regime` `d` ON `d`.`id_regime` = `r`.`id_regime`
+ORDER BY `r`.`id_regime` DESC, `d`.`nb_jours` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_poids`, `r`.`pourcentage_viande`, `r`.`pourcentage_poisson`, `r`.`pourcentage_volaille`, `d`.`id_duree_regime`, `d`.`nb_jours`, `d`.`prix`
+FROM `regime` `r`
+LEFT JOIN `duree_regime` `d` ON `d`.`id_regime` = `r`.`id_regime`
+ORDER BY `r`.`id_regime` DESC, `d`.`nb_jours` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_poids`, `r`.`pourcentage_viande`, `r`.`pourcentage_poisson`, `r`.`pourcentage_volaille`, `d`.`id_duree_regime`, `d`.`nb_jours`, `d`.`prix`
+FROM `regime` `r`
+LEFT JOIN `duree_regime` `d` ON `d`.`id_regime` = `r`.`id_regime`
+ORDER BY `r`.`id_regime` DESC, `d`.`nb_jours` ASC', [], false)
+ 5 APPPATH\Controllers\AdminRegimeController.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminRegimeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminRegimeController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+ERROR - 2026-05-10 14:24:24 --> Cannot delete or update a parent row: a foreign key constraint fails (`regime_db`.`commande`, CONSTRAINT `commande_ibfk_3` FOREIGN KEY (`id_duree_regime`) REFERENCES `duree_regime` (`id_duree_regime`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('DELETE FROM `duree_regime`
+WHERE `id_regime` = 7', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `duree_regime`
+WHERE `id_regime` = 7')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `duree_regime`
+WHERE `id_regime` = 7')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `duree_regime`
+WHERE `id_regime` = :id_regime:', [...], false)
+ 5 SYSTEMPATH\Model.php(441): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1207): CodeIgniter\Model->doDelete(null, false)
+ 7 APPPATH\Controllers\AdminRegimeController.php(355): CodeIgniter\BaseModel->delete()
+ 8 APPPATH\Controllers\AdminRegimeController.php(193): App\Controllers\AdminRegimeController->syncRelations(7, [...], [...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminRegimeController->update(7)
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminRegimeController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+ERROR - 2026-05-10 14:24:33 --> Cannot delete or update a parent row: a foreign key constraint fails (`regime_db`.`commande`, CONSTRAINT `commande_ibfk_3` FOREIGN KEY (`id_duree_regime`) REFERENCES `duree_regime` (`id_duree_regime`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('DELETE FROM `duree_regime`
+WHERE `id_regime` = 7', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `duree_regime`
+WHERE `id_regime` = 7')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `duree_regime`
+WHERE `id_regime` = 7')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `duree_regime`
+WHERE `id_regime` = :id_regime:', [...], false)
+ 5 SYSTEMPATH\Model.php(441): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1207): CodeIgniter\Model->doDelete(null, false)
+ 7 APPPATH\Controllers\AdminRegimeController.php(355): CodeIgniter\BaseModel->delete()
+ 8 APPPATH\Controllers\AdminRegimeController.php(193): App\Controllers\AdminRegimeController->syncRelations(7, [...], [...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminRegimeController->update(7)
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminRegimeController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+ERROR - 2026-05-10 14:24:40 --> Cannot delete or update a parent row: a foreign key constraint fails (`regime_db`.`commande`, CONSTRAINT `commande_ibfk_3` FOREIGN KEY (`id_duree_regime`) REFERENCES `duree_regime` (`id_duree_regime`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('DELETE FROM `duree_regime`
+WHERE `id_regime` = 7', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `duree_regime`
+WHERE `id_regime` = 7')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `duree_regime`
+WHERE `id_regime` = 7')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `duree_regime`
+WHERE `id_regime` = :id_regime:', [...], false)
+ 5 SYSTEMPATH\Model.php(441): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1207): CodeIgniter\Model->doDelete(null, false)
+ 7 APPPATH\Controllers\AdminRegimeController.php(355): CodeIgniter\BaseModel->delete()
+ 8 APPPATH\Controllers\AdminRegimeController.php(193): App\Controllers\AdminRegimeController->syncRelations(7, [...], [...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminRegimeController->update(7)
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminRegimeController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+ERROR - 2026-05-10 14:24:50 --> Cannot delete or update a parent row: a foreign key constraint fails (`regime_db`.`commande`, CONSTRAINT `commande_ibfk_3` FOREIGN KEY (`id_duree_regime`) REFERENCES `duree_regime` (`id_duree_regime`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('DELETE FROM `duree_regime`
+WHERE `id_regime` = 7', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `duree_regime`
+WHERE `id_regime` = 7')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `duree_regime`
+WHERE `id_regime` = 7')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `duree_regime`
+WHERE `id_regime` = :id_regime:', [...], false)
+ 5 SYSTEMPATH\Model.php(441): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1207): CodeIgniter\Model->doDelete(null, false)
+ 7 APPPATH\Controllers\AdminRegimeController.php(355): CodeIgniter\BaseModel->delete()
+ 8 APPPATH\Controllers\AdminRegimeController.php(193): App\Controllers\AdminRegimeController->syncRelations(7, [...], [...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminRegimeController->update(7)
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminRegimeController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+ERROR - 2026-05-10 14:46:38 --> Cannot delete or update a parent row: a foreign key constraint fails (`regime_db`.`duree_regime_prix`, CONSTRAINT `duree_regime_prix_ibfk_1` FOREIGN KEY (`id_duree_regime`) REFERENCES `duree_regime` (`id_duree_regime`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('DELETE FROM `duree_regime`
+WHERE `id_regime` = 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `duree_regime`
+WHERE `id_regime` = 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `duree_regime`
+WHERE `id_regime` = 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `duree_regime`
+WHERE `id_regime` = :id_regime:', [...], false)
+ 5 SYSTEMPATH\Model.php(441): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1207): CodeIgniter\Model->doDelete(null, false)
+ 7 APPPATH\Controllers\AdminRegimeController.php(355): CodeIgniter\BaseModel->delete()
+ 8 APPPATH\Controllers\AdminRegimeController.php(193): App\Controllers\AdminRegimeController->syncRelations(5, [...], [...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminRegimeController->update(5)
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminRegimeController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+ERROR - 2026-05-10 14:46:58 --> Cannot delete or update a parent row: a foreign key constraint fails (`regime_db`.`duree_regime_prix`, CONSTRAINT `duree_regime_prix_ibfk_1` FOREIGN KEY (`id_duree_regime`) REFERENCES `duree_regime` (`id_duree_regime`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('DELETE FROM `duree_regime`
+WHERE `id_regime` = 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `duree_regime`
+WHERE `id_regime` = 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `duree_regime`
+WHERE `id_regime` = 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `duree_regime`
+WHERE `id_regime` = :id_regime:', [...], false)
+ 5 SYSTEMPATH\Model.php(441): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1207): CodeIgniter\Model->doDelete(null, false)
+ 7 APPPATH\Controllers\AdminRegimeController.php(355): CodeIgniter\BaseModel->delete()
+ 8 APPPATH\Controllers\AdminRegimeController.php(193): App\Controllers\AdminRegimeController->syncRelations(5, [...], [...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminRegimeController->update(5)
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminRegimeController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+ERROR - 2026-05-10 16:25:13 --> Cannot delete or update a parent row: a foreign key constraint fails (`regime_db`.`regime_activite`, CONSTRAINT `regime_activite_ibfk_2` FOREIGN KEY (`id_activite`) REFERENCES `activite_sportive` (`id_activite`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('DELETE FROM `activite_sportive`
+WHERE `id_activite` IN (1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `activite_sportive`
+WHERE `id_activite` IN (1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `activite_sportive`
+WHERE `id_activite` IN (1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `activite_sportive`
+WHERE `id_activite` IN :id_activite:', [...], false)
+ 5 SYSTEMPATH\Model.php(441): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1207): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\AdminActiviteController.php(135): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminActiviteController->delete(1)
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminActiviteController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 16:25:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`regime_db`.`regime_activite`, CONSTRAINT `regime_activite_ibfk_2` FOREIGN KEY (`id_activite`) REFERENCES `activite_sportive` (`id_activite`))
+[Method: POST, Route: admin/activites/delete/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `activite_sportive`
+WHERE `id_activite` IN :id_activite:', [...], false)
+ 2 SYSTEMPATH\Model.php(441): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1207): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdminActiviteController.php(135): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminActiviteController->delete(1)
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminActiviteController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 16:25:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`regime_db`.`regime_activite`, CONSTRAINT `regime_activite_ibfk_2` FOREIGN KEY (`id_activite`) REFERENCES `activite_sportive` (`id_activite`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `activite_sportive`
+WHERE `id_activite` IN (1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `activite_sportive`
+WHERE `id_activite` IN (1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `activite_sportive`
+WHERE `id_activite` IN :id_activite:', [...], false)
+ 4 SYSTEMPATH\Model.php(441): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\BaseModel.php(1207): CodeIgniter\Model->doDelete([...], false)
+ 6 APPPATH\Controllers\AdminActiviteController.php(135): CodeIgniter\BaseModel->delete([...])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminActiviteController->delete(1)
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminActiviteController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 16:25:13 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`regime_db`.`regime_activite`, CONSTRAINT `regime_activite_ibfk_2` FOREIGN KEY (`id_activite`) REFERENCES `activite_sportive` (`id_activite`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('DELETE FROM `activite_sportive`
+WHERE `id_activite` IN (1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `activite_sportive`
+WHERE `id_activite` IN (1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `activite_sportive`
+WHERE `id_activite` IN (1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `activite_sportive`
+WHERE `id_activite` IN :id_activite:', [...], false)
+ 5 SYSTEMPATH\Model.php(441): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1207): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\AdminActiviteController.php(135): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminActiviteController->delete(1)
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminActiviteController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+ERROR - 2026-05-10 16:32:56 --> Unknown column 'r.variation_poids' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 5
+ORDER BY `r`.`nom_regime` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 5
+ORDER BY `r`.`nom_regime` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 5
+ORDER BY `r`.`nom_regime` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = :ra.id_activite:
+ORDER BY `r`.`nom_regime` ASC', [...], false)
+ 5 APPPATH\Controllers\AdminActiviteController.php(299): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminActiviteController.php(91): App\Controllers\AdminActiviteController->getLinkedRegimes(5)
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminActiviteController->show(5)
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminActiviteController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 16:32:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r.variation_poids' in 'field list'
+[Method: GET, Route: admin/activites/view/5]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = :ra.id_activite:
+ORDER BY `r`.`nom_regime` ASC', [...], false)
+ 2 APPPATH\Controllers\AdminActiviteController.php(299): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AdminActiviteController.php(91): App\Controllers\AdminActiviteController->getLinkedRegimes(5)
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminActiviteController->show(5)
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminActiviteController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 16:32:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r.variation_poids' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 5
+ORDER BY `r`.`nom_regime` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 5
+ORDER BY `r`.`nom_regime` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = :ra.id_activite:
+ORDER BY `r`.`nom_regime` ASC', [...], false)
+ 4 APPPATH\Controllers\AdminActiviteController.php(299): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\AdminActiviteController.php(91): App\Controllers\AdminActiviteController->getLinkedRegimes(5)
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminActiviteController->show(5)
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminActiviteController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 16:32:56 --> [Caused by] mysqli_sql_exception: Unknown column 'r.variation_poids' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 5
+ORDER BY `r`.`nom_regime` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 5
+ORDER BY `r`.`nom_regime` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 5
+ORDER BY `r`.`nom_regime` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = :ra.id_activite:
+ORDER BY `r`.`nom_regime` ASC', [...], false)
+ 5 APPPATH\Controllers\AdminActiviteController.php(299): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminActiviteController.php(91): App\Controllers\AdminActiviteController->getLinkedRegimes(5)
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminActiviteController->show(5)
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminActiviteController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+ERROR - 2026-05-10 16:33:00 --> Unknown column 'r.variation_poids' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 1
+ORDER BY `r`.`nom_regime` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 1
+ORDER BY `r`.`nom_regime` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 1
+ORDER BY `r`.`nom_regime` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = :ra.id_activite:
+ORDER BY `r`.`nom_regime` ASC', [...], false)
+ 5 APPPATH\Controllers\AdminActiviteController.php(299): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminActiviteController.php(91): App\Controllers\AdminActiviteController->getLinkedRegimes(1)
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminActiviteController->show(1)
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminActiviteController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 16:33:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r.variation_poids' in 'field list'
+[Method: GET, Route: admin/activites/view/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = :ra.id_activite:
+ORDER BY `r`.`nom_regime` ASC', [...], false)
+ 2 APPPATH\Controllers\AdminActiviteController.php(299): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AdminActiviteController.php(91): App\Controllers\AdminActiviteController->getLinkedRegimes(1)
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminActiviteController->show(1)
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminActiviteController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 16:33:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r.variation_poids' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 1
+ORDER BY `r`.`nom_regime` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 1
+ORDER BY `r`.`nom_regime` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = :ra.id_activite:
+ORDER BY `r`.`nom_regime` ASC', [...], false)
+ 4 APPPATH\Controllers\AdminActiviteController.php(299): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\AdminActiviteController.php(91): App\Controllers\AdminActiviteController->getLinkedRegimes(1)
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminActiviteController->show(1)
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminActiviteController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 16:33:00 --> [Caused by] mysqli_sql_exception: Unknown column 'r.variation_poids' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 1
+ORDER BY `r`.`nom_regime` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 1
+ORDER BY `r`.`nom_regime` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 1
+ORDER BY `r`.`nom_regime` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = :ra.id_activite:
+ORDER BY `r`.`nom_regime` ASC', [...], false)
+ 5 APPPATH\Controllers\AdminActiviteController.php(299): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminActiviteController.php(91): App\Controllers\AdminActiviteController->getLinkedRegimes(1)
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminActiviteController->show(1)
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminActiviteController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+ERROR - 2026-05-10 16:33:32 --> Unknown column 'r.variation_poids' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 4
+ORDER BY `r`.`nom_regime` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 4
+ORDER BY `r`.`nom_regime` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 4
+ORDER BY `r`.`nom_regime` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = :ra.id_activite:
+ORDER BY `r`.`nom_regime` ASC', [...], false)
+ 5 APPPATH\Controllers\AdminActiviteController.php(299): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminActiviteController.php(91): App\Controllers\AdminActiviteController->getLinkedRegimes(4)
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminActiviteController->show(4)
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminActiviteController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 16:33:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r.variation_poids' in 'field list'
+[Method: GET, Route: admin/activites/view/4]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = :ra.id_activite:
+ORDER BY `r`.`nom_regime` ASC', [...], false)
+ 2 APPPATH\Controllers\AdminActiviteController.php(299): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AdminActiviteController.php(91): App\Controllers\AdminActiviteController->getLinkedRegimes(4)
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminActiviteController->show(4)
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminActiviteController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 16:33:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r.variation_poids' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 4
+ORDER BY `r`.`nom_regime` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 4
+ORDER BY `r`.`nom_regime` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = :ra.id_activite:
+ORDER BY `r`.`nom_regime` ASC', [...], false)
+ 4 APPPATH\Controllers\AdminActiviteController.php(299): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\AdminActiviteController.php(91): App\Controllers\AdminActiviteController->getLinkedRegimes(4)
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminActiviteController->show(4)
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminActiviteController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 16:33:32 --> [Caused by] mysqli_sql_exception: Unknown column 'r.variation_poids' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 4
+ORDER BY `r`.`nom_regime` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 4
+ORDER BY `r`.`nom_regime` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 4
+ORDER BY `r`.`nom_regime` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = :ra.id_activite:
+ORDER BY `r`.`nom_regime` ASC', [...], false)
+ 5 APPPATH\Controllers\AdminActiviteController.php(299): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminActiviteController.php(91): App\Controllers\AdminActiviteController->getLinkedRegimes(4)
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminActiviteController->show(4)
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminActiviteController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+ERROR - 2026-05-10 16:34:11 --> Unknown column 'r.variation_poids' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 7
+ORDER BY `r`.`nom_regime` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 7
+ORDER BY `r`.`nom_regime` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 7
+ORDER BY `r`.`nom_regime` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = :ra.id_activite:
+ORDER BY `r`.`nom_regime` ASC', [...], false)
+ 5 APPPATH\Controllers\AdminActiviteController.php(299): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminActiviteController.php(91): App\Controllers\AdminActiviteController->getLinkedRegimes(7)
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminActiviteController->show(7)
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminActiviteController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 16:34:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r.variation_poids' in 'field list'
+[Method: GET, Route: admin/activites/view/7]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = :ra.id_activite:
+ORDER BY `r`.`nom_regime` ASC', [...], false)
+ 2 APPPATH\Controllers\AdminActiviteController.php(299): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AdminActiviteController.php(91): App\Controllers\AdminActiviteController->getLinkedRegimes(7)
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminActiviteController->show(7)
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminActiviteController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 16:34:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r.variation_poids' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 7
+ORDER BY `r`.`nom_regime` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 7
+ORDER BY `r`.`nom_regime` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = :ra.id_activite:
+ORDER BY `r`.`nom_regime` ASC', [...], false)
+ 4 APPPATH\Controllers\AdminActiviteController.php(299): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\AdminActiviteController.php(91): App\Controllers\AdminActiviteController->getLinkedRegimes(7)
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminActiviteController->show(7)
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminActiviteController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 16:34:11 --> [Caused by] mysqli_sql_exception: Unknown column 'r.variation_poids' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 7
+ORDER BY `r`.`nom_regime` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 7
+ORDER BY `r`.`nom_regime` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = 7
+ORDER BY `r`.`nom_regime` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_regime`, `r`.`nom_regime`, `r`.`variation_mensuelle_kg`, `r`.`variation_poids`
+FROM `regime_activite` `ra`
+JOIN `regime` `r` ON `r`.`id_regime` = `ra`.`id_regime`
+WHERE `ra`.`id_activite` = :ra.id_activite:
+ORDER BY `r`.`nom_regime` ASC', [...], false)
+ 5 APPPATH\Controllers\AdminActiviteController.php(299): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminActiviteController.php(91): App\Controllers\AdminActiviteController->getLinkedRegimes(7)
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminActiviteController->show(7)
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminActiviteController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+ERROR - 2026-05-10 17:22:11 --> Table 'regime_db.demande_code_promo' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `demande_code_promo`
+WHERE `id_utilisateur` = 1
+ORDER BY `date_demande` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `demande_code_promo`
+WHERE `id_utilisateur` = 1
+ORDER BY `date_demande` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `demande_code_promo`
+WHERE `id_utilisateur` = 1
+ORDER BY `date_demande` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `demande_code_promo`
+WHERE `id_utilisateur` = :id_utilisateur:
+ORDER BY `date_demande` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\DemandeCodePromoModel.php(57): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Auth.php(271): App\Models\DemandeCodePromoModel->getUserHistory(1)
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->promo()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 17:22:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'regime_db.demande_code_promo' doesn't exist
+[Method: GET, Route: promo]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `demande_code_promo`
+WHERE `id_utilisateur` = :id_utilisateur:
+ORDER BY `date_demande` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\DemandeCodePromoModel.php(57): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Auth.php(271): App\Models\DemandeCodePromoModel->getUserHistory(1)
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->promo()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 17:22:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'regime_db.demande_code_promo' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `demande_code_promo`
+WHERE `id_utilisateur` = 1
+ORDER BY `date_demande` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `demande_code_promo`
+WHERE `id_utilisateur` = 1
+ORDER BY `date_demande` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `demande_code_promo`
+WHERE `id_utilisateur` = :id_utilisateur:
+ORDER BY `date_demande` DESC', [...], false)
+ 4 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\DemandeCodePromoModel.php(57): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Auth.php(271): App\Models\DemandeCodePromoModel->getUserHistory(1)
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->promo()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 17:22:11 --> [Caused by] mysqli_sql_exception: Table 'regime_db.demande_code_promo' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `demande_code_promo`
+WHERE `id_utilisateur` = 1
+ORDER BY `date_demande` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `demande_code_promo`
+WHERE `id_utilisateur` = 1
+ORDER BY `date_demande` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `demande_code_promo`
+WHERE `id_utilisateur` = 1
+ORDER BY `date_demande` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `demande_code_promo`
+WHERE `id_utilisateur` = :id_utilisateur:
+ORDER BY `date_demande` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\DemandeCodePromoModel.php(57): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Auth.php(271): App\Models\DemandeCodePromoModel->getUserHistory(1)
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->promo()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+ERROR - 2026-05-10 17:22:57 --> Table 'regime_db.demande_code_promo' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `d`.`id_demande_code_promo`, `d`.`code_saisi`, `d`.`statut`, `d`.`note_admin`, `d`.`date_demande`, `d`.`date_traitement`, `u`.`id_utilisateur`, `u`.`nom` AS `utilisateur_nom`, `u`.`email` AS `utilisateur_email`, `a`.`nom` AS `admin_nom`
+FROM `demande_code_promo` `d`
+LEFT JOIN `utilisateur` `u` ON `u`.`id_utilisateur` = `d`.`id_utilisateur`
+LEFT JOIN `utilisateur` `a` ON `a`.`id_utilisateur` = `d`.`id_admin_traitement`
+ORDER BY CASE WHEN d.statut = \'en_attente\' THEN 0 ELSE 1 END, `d`.`date_demande` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `d`.`id_demande_code_promo`, `d`.`code_saisi`, `d`.`statut`, `d`.`note_admin`, `d`.`date_demande`, `d`.`date_traitement`, `u`.`id_utilisateur`, `u`.`nom` AS `utilisateur_nom`, `u`.`email` AS `utilisateur_email`, `a`.`nom` AS `admin_nom`
+FROM `demande_code_promo` `d`
+LEFT JOIN `utilisateur` `u` ON `u`.`id_utilisateur` = `d`.`id_utilisateur`
+LEFT JOIN `utilisateur` `a` ON `a`.`id_utilisateur` = `d`.`id_admin_traitement`
+ORDER BY CASE WHEN d.statut = \'en_attente\' THEN 0 ELSE 1 END, `d`.`date_demande` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `d`.`id_demande_code_promo`, `d`.`code_saisi`, `d`.`statut`, `d`.`note_admin`, `d`.`date_demande`, `d`.`date_traitement`, `u`.`id_utilisateur`, `u`.`nom` AS `utilisateur_nom`, `u`.`email` AS `utilisateur_email`, `a`.`nom` AS `admin_nom`
+FROM `demande_code_promo` `d`
+LEFT JOIN `utilisateur` `u` ON `u`.`id_utilisateur` = `d`.`id_utilisateur`
+LEFT JOIN `utilisateur` `a` ON `a`.`id_utilisateur` = `d`.`id_admin_traitement`
+ORDER BY CASE WHEN d.statut = \'en_attente\' THEN 0 ELSE 1 END, `d`.`date_demande` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`id_demande_code_promo`, `d`.`code_saisi`, `d`.`statut`, `d`.`note_admin`, `d`.`date_demande`, `d`.`date_traitement`, `u`.`id_utilisateur`, `u`.`nom` AS `utilisateur_nom`, `u`.`email` AS `utilisateur_email`, `a`.`nom` AS `admin_nom`
+FROM `demande_code_promo` `d`
+LEFT JOIN `utilisateur` `u` ON `u`.`id_utilisateur` = `d`.`id_utilisateur`
+LEFT JOIN `utilisateur` `a` ON `a`.`id_utilisateur` = `d`.`id_admin_traitement`
+ORDER BY CASE WHEN d.statut = \'en_attente\' THEN 0 ELSE 1 END, `d`.`date_demande` DESC', [], false)
+ 5 APPPATH\Models\DemandeCodePromoModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminPromoController.php(161): App\Models\DemandeCodePromoModel->getAdminListing()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminPromoController->validatePage()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPromoController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 17:22:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'regime_db.demande_code_promo' doesn't exist
+[Method: GET, Route: admin/promos/validate]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`id_demande_code_promo`, `d`.`code_saisi`, `d`.`statut`, `d`.`note_admin`, `d`.`date_demande`, `d`.`date_traitement`, `u`.`id_utilisateur`, `u`.`nom` AS `utilisateur_nom`, `u`.`email` AS `utilisateur_email`, `a`.`nom` AS `admin_nom`
+FROM `demande_code_promo` `d`
+LEFT JOIN `utilisateur` `u` ON `u`.`id_utilisateur` = `d`.`id_utilisateur`
+LEFT JOIN `utilisateur` `a` ON `a`.`id_utilisateur` = `d`.`id_admin_traitement`
+ORDER BY CASE WHEN d.statut = \'en_attente\' THEN 0 ELSE 1 END, `d`.`date_demande` DESC', [], false)
+ 2 APPPATH\Models\DemandeCodePromoModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AdminPromoController.php(161): App\Models\DemandeCodePromoModel->getAdminListing()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminPromoController->validatePage()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPromoController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 17:22:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'regime_db.demande_code_promo' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `d`.`id_demande_code_promo`, `d`.`code_saisi`, `d`.`statut`, `d`.`note_admin`, `d`.`date_demande`, `d`.`date_traitement`, `u`.`id_utilisateur`, `u`.`nom` AS `utilisateur_nom`, `u`.`email` AS `utilisateur_email`, `a`.`nom` AS `admin_nom`
+FROM `demande_code_promo` `d`
+LEFT JOIN `utilisateur` `u` ON `u`.`id_utilisateur` = `d`.`id_utilisateur`
+LEFT JOIN `utilisateur` `a` ON `a`.`id_utilisateur` = `d`.`id_admin_traitement`
+ORDER BY CASE WHEN d.statut = \'en_attente\' THEN 0 ELSE 1 END, `d`.`date_demande` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `d`.`id_demande_code_promo`, `d`.`code_saisi`, `d`.`statut`, `d`.`note_admin`, `d`.`date_demande`, `d`.`date_traitement`, `u`.`id_utilisateur`, `u`.`nom` AS `utilisateur_nom`, `u`.`email` AS `utilisateur_email`, `a`.`nom` AS `admin_nom`
+FROM `demande_code_promo` `d`
+LEFT JOIN `utilisateur` `u` ON `u`.`id_utilisateur` = `d`.`id_utilisateur`
+LEFT JOIN `utilisateur` `a` ON `a`.`id_utilisateur` = `d`.`id_admin_traitement`
+ORDER BY CASE WHEN d.statut = \'en_attente\' THEN 0 ELSE 1 END, `d`.`date_demande` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`id_demande_code_promo`, `d`.`code_saisi`, `d`.`statut`, `d`.`note_admin`, `d`.`date_demande`, `d`.`date_traitement`, `u`.`id_utilisateur`, `u`.`nom` AS `utilisateur_nom`, `u`.`email` AS `utilisateur_email`, `a`.`nom` AS `admin_nom`
+FROM `demande_code_promo` `d`
+LEFT JOIN `utilisateur` `u` ON `u`.`id_utilisateur` = `d`.`id_utilisateur`
+LEFT JOIN `utilisateur` `a` ON `a`.`id_utilisateur` = `d`.`id_admin_traitement`
+ORDER BY CASE WHEN d.statut = \'en_attente\' THEN 0 ELSE 1 END, `d`.`date_demande` DESC', [], false)
+ 4 APPPATH\Models\DemandeCodePromoModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\AdminPromoController.php(161): App\Models\DemandeCodePromoModel->getAdminListing()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminPromoController->validatePage()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPromoController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 17:22:57 --> [Caused by] mysqli_sql_exception: Table 'regime_db.demande_code_promo' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `d`.`id_demande_code_promo`, `d`.`code_saisi`, `d`.`statut`, `d`.`note_admin`, `d`.`date_demande`, `d`.`date_traitement`, `u`.`id_utilisateur`, `u`.`nom` AS `utilisateur_nom`, `u`.`email` AS `utilisateur_email`, `a`.`nom` AS `admin_nom`
+FROM `demande_code_promo` `d`
+LEFT JOIN `utilisateur` `u` ON `u`.`id_utilisateur` = `d`.`id_utilisateur`
+LEFT JOIN `utilisateur` `a` ON `a`.`id_utilisateur` = `d`.`id_admin_traitement`
+ORDER BY CASE WHEN d.statut = \'en_attente\' THEN 0 ELSE 1 END, `d`.`date_demande` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `d`.`id_demande_code_promo`, `d`.`code_saisi`, `d`.`statut`, `d`.`note_admin`, `d`.`date_demande`, `d`.`date_traitement`, `u`.`id_utilisateur`, `u`.`nom` AS `utilisateur_nom`, `u`.`email` AS `utilisateur_email`, `a`.`nom` AS `admin_nom`
+FROM `demande_code_promo` `d`
+LEFT JOIN `utilisateur` `u` ON `u`.`id_utilisateur` = `d`.`id_utilisateur`
+LEFT JOIN `utilisateur` `a` ON `a`.`id_utilisateur` = `d`.`id_admin_traitement`
+ORDER BY CASE WHEN d.statut = \'en_attente\' THEN 0 ELSE 1 END, `d`.`date_demande` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `d`.`id_demande_code_promo`, `d`.`code_saisi`, `d`.`statut`, `d`.`note_admin`, `d`.`date_demande`, `d`.`date_traitement`, `u`.`id_utilisateur`, `u`.`nom` AS `utilisateur_nom`, `u`.`email` AS `utilisateur_email`, `a`.`nom` AS `admin_nom`
+FROM `demande_code_promo` `d`
+LEFT JOIN `utilisateur` `u` ON `u`.`id_utilisateur` = `d`.`id_utilisateur`
+LEFT JOIN `utilisateur` `a` ON `a`.`id_utilisateur` = `d`.`id_admin_traitement`
+ORDER BY CASE WHEN d.statut = \'en_attente\' THEN 0 ELSE 1 END, `d`.`date_demande` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`id_demande_code_promo`, `d`.`code_saisi`, `d`.`statut`, `d`.`note_admin`, `d`.`date_demande`, `d`.`date_traitement`, `u`.`id_utilisateur`, `u`.`nom` AS `utilisateur_nom`, `u`.`email` AS `utilisateur_email`, `a`.`nom` AS `admin_nom`
+FROM `demande_code_promo` `d`
+LEFT JOIN `utilisateur` `u` ON `u`.`id_utilisateur` = `d`.`id_utilisateur`
+LEFT JOIN `utilisateur` `a` ON `a`.`id_utilisateur` = `d`.`id_admin_traitement`
+ORDER BY CASE WHEN d.statut = \'en_attente\' THEN 0 ELSE 1 END, `d`.`date_demande` DESC', [], false)
+ 5 APPPATH\Models\DemandeCodePromoModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminPromoController.php(161): App\Models\DemandeCodePromoModel->getAdminListing()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminPromoController->validatePage()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPromoController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+ERROR - 2026-05-10 22:05:54 --> Unknown column 'date_commande' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT SUM(`montant_paye`) AS `montant_paye`
+FROM `commande`
+WHERE DATE_FORMAT(date_commande, \'%Y-%m\') = \'2025-12\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`montant_paye`) AS `montant_paye`
+FROM `commande`
+WHERE DATE_FORMAT(date_commande, \'%Y-%m\') = \'2025-12\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`montant_paye`) AS `montant_paye`
+FROM `commande`
+WHERE DATE_FORMAT(date_commande, \'%Y-%m\') = \'2025-12\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`montant_paye`) AS `montant_paye`
+FROM `commande`
+WHERE DATE_FORMAT(date_commande, \'%Y-%m\') = :DATE_FORMAT(date_commande, \'%Y-%m\'):', [...], false)
+ 5 APPPATH\Models\AdminModel.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminController.php(52): App\Models\AdminModel->getDashboardStats()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminController->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 22:05:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'date_commande' in 'where clause'
+[Method: GET, Route: admin/dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`montant_paye`) AS `montant_paye`
+FROM `commande`
+WHERE DATE_FORMAT(date_commande, \'%Y-%m\') = :DATE_FORMAT(date_commande, \'%Y-%m\'):', [...], false)
+ 2 APPPATH\Models\AdminModel.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AdminController.php(52): App\Models\AdminModel->getDashboardStats()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminController->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 22:05:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'date_commande' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`montant_paye`) AS `montant_paye`
+FROM `commande`
+WHERE DATE_FORMAT(date_commande, \'%Y-%m\') = \'2025-12\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`montant_paye`) AS `montant_paye`
+FROM `commande`
+WHERE DATE_FORMAT(date_commande, \'%Y-%m\') = \'2025-12\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`montant_paye`) AS `montant_paye`
+FROM `commande`
+WHERE DATE_FORMAT(date_commande, \'%Y-%m\') = :DATE_FORMAT(date_commande, \'%Y-%m\'):', [...], false)
+ 4 APPPATH\Models\AdminModel.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\AdminController.php(52): App\Models\AdminModel->getDashboardStats()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')
+CRITICAL - 2026-05-10 22:05:54 --> [Caused by] mysqli_sql_exception: Unknown column 'date_commande' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT SUM(`montant_paye`) AS `montant_paye`
+FROM `commande`
+WHERE DATE_FORMAT(date_commande, \'%Y-%m\') = \'2025-12\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`montant_paye`) AS `montant_paye`
+FROM `commande`
+WHERE DATE_FORMAT(date_commande, \'%Y-%m\') = \'2025-12\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`montant_paye`) AS `montant_paye`
+FROM `commande`
+WHERE DATE_FORMAT(date_commande, \'%Y-%m\') = \'2025-12\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`montant_paye`) AS `montant_paye`
+FROM `commande`
+WHERE DATE_FORMAT(date_commande, \'%Y-%m\') = :DATE_FORMAT(date_commande, \'%Y-%m\'):', [...], false)
+ 5 APPPATH\Models\AdminModel.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminController.php(52): App\Models\AdminModel->getDashboardStats()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AdminController->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\PROJET_REGIME\\public\\index.php')

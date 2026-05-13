@@ -1,0 +1,255 @@
+/* ==========================================================
+   AUTH STYLES — auth.css
+   Login, register, admin login. Green theme.
+   ========================================================== */
+
+/* ── Page Wrapper ── */
+.auth-page {
+  background:
+    radial-gradient(circle at top left, rgba(31, 143, 106, 0.08), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(21, 116, 84, 0.06), transparent 30%),
+    linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.auth-with-topbar {
+  display: block;
+  padding: 0;
+}
+
+.auth-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  animation: authSlideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.auth-with-topbar .auth-wrapper {
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+@keyframes authSlideUp {
+  from { transform: translateY(16px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+/* ── Split Layout Shell ── */
+.auth-shell {
+  background: var(--surface);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+/* ── Side-by-side Grid ── */
+.auth-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  min-height: 100%;
+}
+
+/* ── Promo Panel (left) ── */
+.auth-promo {
+  padding: 30px 28px;
+  background: linear-gradient(135deg, rgba(31, 143, 106, 0.96), rgba(21, 116, 84, 0.82));
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-promo::after {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.08), transparent 70%);
+  top: -100px;
+  right: -100px;
+  border-radius: 50%;
+}
+
+.auth-promo h1 {
+  margin: 0;
+  font-size: clamp(22px, 2.5vw, 30px);
+  line-height: 1.15;
+}
+
+.auth-promo .sub { color: rgba(255, 255, 255, 0.84); }
+
+.auth-promo-footer {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 13px;
+}
+
+/* ── Form Panel (right) ── */
+.auth-form-panel {
+  padding: 30px 28px;
+}
+
+.auth-form-panel .stack { gap: var(--space-4); }
+
+/* ── Admin Badge ── */
+.auth-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* ── Password Toggle ── */
+.eye-btn {
+  position: absolute;
+  right: 12px;
+  top: 34px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+
+.eye-btn:hover { opacity: 0.9; }
+.eye-btn img { width: 18px; height: 18px; }
+
+/* ── Progress Bar (Registration Steps) ── */
+.auth-progress {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+}
+
+.auth-progress-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.auth-progress-bar {
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.auth-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), #5ec4a0);
+  transition: width 0.4s ease;
+}
+
+/* ── Recap Grid (Step 3) ── */
+.recap-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.recap-item {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.recap-item img { width: 18px; height: 18px; margin-bottom: 4px; }
+.recap-item span { font-size: 12px; color: var(--muted); }
+.recap-item strong { color: var(--text); font-weight: 700; font-size: 14px; }
+
+/* ── Field Icon States ── */
+.field-icon { display: none; }
+.field-icon.ok,
+.field-icon.err { display: inline; position: absolute; right: 12px; top: 36px; font-size: 14px; }
+.field-icon.ok::before  { content: "✓"; color: var(--success-text); }
+.field-icon.err::before { content: "✗"; color: var(--error-text); }
+
+/* ── IMC Card ── */
+.imc-card {
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+
+.imc-bar {
+  height: 12px;
+  margin-top: 10px;
+  background: #e2e8f0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.imc-bar-fill {
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+/* ── Auth page link ── */
+.auth-link {
+  margin-top: 14px;
+  font-size: 14px;
+}
+
+.auth-link a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-link a:hover { text-decoration: underline; }
+
+/* ── Invalid section highlight ── */
+.invalid-section {
+  border: 1px solid #fecdca;
+  background: var(--error-bg);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-3);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .auth-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-promo {
+    padding: 24px 20px;
+    text-align: center;
+  }
+
+  .auth-form-panel {
+    padding: 24px 20px;
+  }
+
+  .auth-shell {
+    max-width: 100%;
+  }
+
+  .recap-grid {
+    grid-template-columns: 1fr;
+  }
+}

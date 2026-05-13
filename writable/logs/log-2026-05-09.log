@@ -1,0 +1,52 @@
+CRITICAL - 2026-05-09 19:44:48 --> ErrorException: Undefined array key "variation_mensuelle_kg"
+[Method: GET, Route: regimes]
+in APPPATH/Controllers/RegimeController.php on line 35.
+ 1 APPPATH/Controllers/RegimeController.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 [internal function]: App\Controllers\RegimeController->{closure:App\Controllers\RegimeController::index():34}()
+ 3 APPPATH/Controllers/RegimeController.php(34): array_map()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-09 19:44:54 --> ErrorException: Undefined array key "variation_mensuelle_kg"
+[Method: GET, Route: regimes]
+in APPPATH/Controllers/RegimeController.php on line 35.
+ 1 APPPATH/Controllers/RegimeController.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 [internal function]: App\Controllers\RegimeController->{closure:App\Controllers\RegimeController::index():34}()
+ 3 APPPATH/Controllers/RegimeController.php(34): array_map()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-09 19:45:18 --> ErrorException: Undefined array key "variation_mensuelle_kg"
+[Method: GET, Route: regimes]
+in APPPATH/Controllers/RegimeController.php on line 35.
+ 1 APPPATH/Controllers/RegimeController.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 [internal function]: App\Controllers\RegimeController->{closure:App\Controllers\RegimeController::index():34}()
+ 3 APPPATH/Controllers/RegimeController.php(34): array_map()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')
+CRITICAL - 2026-05-09 19:47:28 --> ErrorException: Undefined array key "variation_mensuelle_kg"
+[Method: GET, Route: regimes]
+in APPPATH/Controllers/RegimeController.php on line 35.
+ 1 APPPATH/Controllers/RegimeController.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 [internal function]: App\Controllers\RegimeController->{closure:App\Controllers\RegimeController::index():34}()
+ 3 APPPATH/Controllers/RegimeController.php(34): array_map()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RegimeController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ianjara/dossier_personnel/ITU/L2/s4/PROJET_REGIME/public/index.php')

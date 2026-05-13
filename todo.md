@@ -7,6 +7,15 @@
 - sqlite3 database.db < ton_fichier.sql [ok]
 - BDD : preparer le structure qui va accueillir tes donnees 
 - migration [ok] : php spark migrate
-- seeder : remplir ta base de donnees avec des donnees de test automatiquement : php spark db:seed FitspaceSeeder.php
-- routes 
+- seeder : remplir ta base de donnees avec des donnees de test automatiquement : php spark db:seed FitspaceSeeder.php [ok] routes 
 - squelette : architecture base 
+- ## Espace employe : 
+- Connexion / deconnexion 
+- table user
+- creation du EmployeController : 
+                                - checkEmployeExist   (Connexion)
+                                - CheckConnecte 
+- creation modele de l'employe 
+- creation DemandeController : 
+                            - getAllDemande where id_employe = a celle connecte avec leur statut 
+                            - voir son solde de conges restant par type 

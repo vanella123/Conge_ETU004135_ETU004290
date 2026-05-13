@@ -1,79 +1,105 @@
 <?php
 
+/**
+ * Routes.php — Configuration des routes CI4
+ *
+ * Stratégie de sécurité :
+ *   - Routes publiques  : /login, /logout (pas de filtre)
+ *   - Routes employé    : filtre auth + role:employe,rh,admin
+ *   - Routes RH         : filtre auth + role:rh,admin
+ *   - Routes admin      : filtre auth + role:admin
+ */
+
 use CodeIgniter\Router\RouteCollection;
 
-/**
- * @var RouteCollection $routes
- */
-$routes->get('/', 'HomeController::index');
-$routes->get('register', 'Auth::register');
-$routes->post('register', 'Auth::saveRegisterPersonal');
-$routes->get('register/health', 'Auth::registerHealth');
-$routes->post('register/health', 'Auth::saveRegisterHealth');
-$routes->post('register/check-email', 'Auth::checkEmailAvailability');
-$routes->post('register/imc-preview', 'Auth::imcPreview');
-$routes->get('login', 'Auth::login');
-$routes->post('login', 'Auth::attemptLogin');
-$routes->get('dashboard', 'Auth::dashboard', ['filter' => 'auth']);
-$routes->get('transactions', 'Auth::transactions', ['filter' => 'auth']);
-$routes->get('promo', 'Auth::promo', ['filter' => 'auth']);
-$routes->post('promo', 'Auth::applyPromo', ['filter' => 'auth']);
-$routes->get('options', 'OptionController::index', ['filter' => 'auth']);
-$routes->post('options/gold/buy/(:num)', 'OptionController::buyGold/$1', ['filter' => 'auth']);
-$routes->get('regimes/purchase/(:num)', 'CommandeController::purchase/$1', ['filter' => 'auth']);
-$routes->post('regimes/purchase/(:num)', 'CommandeController::confirmPurchase/$1', ['filter' => 'auth']);
-$routes->get('profile', 'Auth::profile', ['filter' => 'auth']);
-$routes->get('profile/edit', 'Auth::editProfile', ['filter' => 'auth']);
-$routes->post('profile/update', 'Auth::updateProfile', ['filter' => 'auth']);
-$routes->get('logout', 'Auth::logout', ['filter' => 'auth']);
-$routes->get('regimes', 'RegimeController::index');
-$routes->get('regimes/(:num)', 'RegimeController::show/$1');
-$routes->get('regimes/(:num)/export-pdf', 'RegimeController::exportPdf/$1', ['filter' => 'auth']);
-$routes->get('mes-regimes', 'RegimeController::myRegimes', ['filter' => 'auth']);
-$routes->get('mes-regimes/(:num)', 'RegimeController::myRegimeDetail/$1', ['filter' => 'auth']);
-$routes->get('mes-regimes/(:num)/export-pdf', 'RegimeController::exportRegimePdf/$1', ['filter' => 'auth']);
+/** @var RouteCollection $routes */
 
-$routes->post('/admin/authenticate', 'AdminController::authenticate');
-$routes->get('/admin/dashboard', 'AdminController::dashboard');
-$routes->get('/admin/stats-croisees', 'AdminController::statsCroisees');
-$routes->get('/admin', 'AdminController::login');
-$routes->get('/admin/login', 'AdminController::login');
-$routes->get('/admin/logout', 'AdminController::logout');
-$routes->get('/admin/utilisateurs', 'AdminUtilisateurController::index');
-$routes->get('/admin/utilisateurs/view/(:num)', 'AdminUtilisateurController::show/$1');
-$routes->get('/admin/imc', 'AdminImcController::index');
-$routes->get('/admin/imc/edit/(:num)', 'AdminImcController::edit/$1');
-$routes->post('/admin/imc/update/(:num)', 'AdminImcController::update/$1');
-$routes->get('/admin/regimes', 'AdminRegimeController::index');
-$routes->get('/admin/regimes/create', 'AdminRegimeController::create');
-$routes->post('/admin/regimes/store', 'AdminRegimeController::store');
-$routes->get('/admin/regimes/view/(:num)', 'AdminRegimeController::show/$1');
-$routes->get('/admin/regimes/edit/(:num)', 'AdminRegimeController::edit/$1');
-$routes->post('/admin/regimes/update/(:num)', 'AdminRegimeController::update/$1');
-$routes->post('/admin/regimes/delete/(:num)', 'AdminRegimeController::delete/$1');
-$routes->get('/admin/activites', 'AdminActiviteController::index');
-$routes->get('/admin/activites/create', 'AdminActiviteController::create');
-$routes->post('/admin/activites/store', 'AdminActiviteController::store');
-$routes->get('/admin/activites/view/(:num)', 'AdminActiviteController::show/$1');
-$routes->get('/admin/activites/edit/(:num)', 'AdminActiviteController::edit/$1');
-$routes->post('/admin/activites/update/(:num)', 'AdminActiviteController::update/$1');
-$routes->post('/admin/activites/delete/(:num)', 'AdminActiviteController::delete/$1');
-$routes->get('/admin/regimes/(:num)/activites', 'AdminActiviteController::regimeActivites/$1');
-$routes->post('/admin/regimes/(:num)/activites', 'AdminActiviteController::addRegimeActivite/$1');
-$routes->post('/admin/regimes/activites/delete/(:num)', 'AdminActiviteController::removeRegimeActivite/$1');
-$routes->get('/admin/promos', 'AdminPromoController::index');
-$routes->get('/admin/promos/create', 'AdminPromoController::create');
-$routes->post('/admin/promos/store', 'AdminPromoController::store');
-$routes->get('/admin/promos/edit/(:num)', 'AdminPromoController::edit/$1');
-$routes->post('/admin/promos/update/(:num)', 'AdminPromoController::update/$1');
-$routes->post('/admin/promos/delete/(:num)', 'AdminPromoController::delete/$1');
-$routes->get('/admin/promos/validate', 'AdminPromoController::validatePage');
-$routes->post('/admin/promos/validate/approve/(:num)', 'AdminPromoController::approveRequest/$1');
-$routes->post('/admin/promos/validate/reject/(:num)', 'AdminPromoController::rejectRequest/$1');
-$routes->get('/admin/options', 'AdminOptionController::index');
-$routes->get('/admin/options/create', 'AdminOptionController::create');
-$routes->post('/admin/options/store', 'AdminOptionController::store');
-$routes->get('/admin/options/view/(:num)', 'AdminOptionController::show/$1');
-$routes->get('/admin/options/edit/(:num)', 'AdminOptionController::edit/$1');
-$routes->post('/admin/options/update/(:num)', 'AdminOptionController::update/$1');
-$routes->post('/admin/options/delete/(:num)', 'AdminOptionController::delete/$1');
+// ----------------------------------------------------------------
+// Page d'accueil → redirection vers login
+// ----------------------------------------------------------------
+$routes->get('/', function () {
+    return redirect()->to('/login');
+});
+
+// ----------------------------------------------------------------
+// Authentification (routes PUBLIQUES — pas de filtre)
+// ----------------------------------------------------------------
+$routes->get('/login',  'AuthController::loginForm');
+$routes->post('/login', 'AuthController::loginAction');
+$routes->get('/logout', 'AuthController::logout');
+
+// ================================================================
+// Routes EMPLOYÉ  (accès : employe + rh + admin)
+// ================================================================
+$routes->group('employe', ['filter' => 'auth|role:employe,rh,admin'], function ($routes) {
+
+    // Tableau de bord
+    $routes->get('dashboard',  'Employe\DashboardController::index');
+
+    // Congés
+    $routes->get('conges',           'Employe\CongeController::index');
+    $routes->get('conges/demande',   'Employe\CongeController::form');
+    $routes->post('conges/demande',  'Employe\CongeController::submit');
+    $routes->get('conges/annuler/(:num)', 'Employe\CongeController::cancel/$1');
+
+    // Soldes
+    $routes->get('soldes', 'Employe\SoldeController::index');
+
+    // Profil
+    $routes->get('profil',  'Employe\ProfilController::index');
+    $routes->post('profil', 'Employe\ProfilController::update');
+});
+
+// ================================================================
+// Routes RH  (accès : rh + admin seulement)
+// ================================================================
+$routes->group('rh', ['filter' => 'auth|role:rh,admin'], function ($routes) {
+
+    // Tableau de bord RH
+    $routes->get('dashboard', 'RH\DashboardController::index');
+
+    // Gestion des demandes
+    $routes->get('demandes',                 'RH\DemandeController::index');
+    $routes->get('demandes/(:num)',          'RH\DemandeController::show/$1');
+    $routes->post('demandes/(:num)/approuver', 'RH\DemandeController::approve/$1');
+    $routes->post('demandes/(:num)/refuser',   'RH\DemandeController::refuse/$1');
+
+    // Soldes employés
+    $routes->get('soldes',              'RH\SoldeController::index');
+    $routes->get('soldes/(:num)',       'RH\SoldeController::show/$1');
+});
+
+// ================================================================
+// Routes ADMIN  (accès : admin seulement)
+// ================================================================
+$routes->group('admin', ['filter' => 'auth|role:admin'], function ($routes) {
+
+    // Tableau de bord
+    $routes->get('dashboard', 'Admin\DashboardController::index');
+
+    // --- Gestion des employés ---
+    $routes->get('employes',             'Admin\EmployeController::index');
+    $routes->get('employes/nouveau',     'Admin\EmployeController::create');
+    $routes->post('employes/nouveau',    'Admin\EmployeController::store');
+    $routes->get('employes/(:num)',      'Admin\EmployeController::edit/$1');
+    $routes->post('employes/(:num)',     'Admin\EmployeController::update/$1');
+    $routes->get('employes/(:num)/desactiver', 'Admin\EmployeController::deactivate/$1');
+
+    // --- Gestion des départements ---
+    $routes->get('departements',           'Admin\DepartementController::index');
+    $routes->post('departements',          'Admin\DepartementController::store');
+    $routes->post('departements/(:num)',   'Admin\DepartementController::update/$1');
+    $routes->get('departements/(:num)/supprimer', 'Admin\DepartementController::delete/$1');
+
+    // --- Types de congé ---
+    $routes->get('types-conge',           'Admin\TypeCongeController::index');
+    $routes->post('types-conge',          'Admin\TypeCongeController::store');
+    $routes->post('types-conge/(:num)',   'Admin\TypeCongeController::update/$1');
+
+    // --- Soldes annuels ---
+    $routes->get('soldes',        'Admin\SoldeController::index');
+    $routes->post('soldes/init',  'Admin\SoldeController::initialize');
+
+    // --- Vue globale des demandes ---
+    $routes->get('demandes',      'Admin\DemandeController::index');
+});

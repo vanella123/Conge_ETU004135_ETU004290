@@ -16,3 +16,18 @@ Stack trace:
 #13 /home/vaa/S4/SI/Conge_ETU004135_ETU004290/system/Boot.php(166): CodeIgniter\Boot::runCommand()
 #14 /home/vaa/S4/SI/Conge_ETU004135_ETU004290/spark(87): CodeIgniter\Boot::bootSpark()
 #15 {main}
+ERROR - 2026-05-13 07:46:02 --> no such table: departments
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Database/Seeds/CongesSeeder.php(78): CodeIgniter\Database\BaseBuilder->insert()
+ 6 APPPATH/Database/Seeds/CongesSeeder.php(15): App\Database\Seeds\CongesSeeder->seedDepartments()
+ 7 SYSTEMPATH/Database/Seeder.php(155): App\Database\Seeds\CongesSeeder->run()
+ 8 SYSTEMPATH/Commands/Database/Seed.php(79): CodeIgniter\Database\Seeder->call()
+ 9 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
+10 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+11 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+12 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+13 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()

@@ -11,9 +11,7 @@
  */
 
 use CodeIgniter\Router\RouteCollection;
-
 /** @var RouteCollection $routes */
-
 // ----------------------------------------------------------------
 // Page d'accueil → redirection vers login
 // ----------------------------------------------------------------

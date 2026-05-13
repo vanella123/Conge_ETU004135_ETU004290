@@ -12,6 +12,14 @@
 
 use CodeIgniter\Router\RouteCollection;
 /** @var RouteCollection $routes */
+$routes->get('connexion', 'EmployeController::login');
+$routes->post('connexion', 'EmployeController::checkEmployeExist');
+
+$routes->get('login', 'EmployeController::login');
+$routes->post('login', 'EmployeController::checkEmployeExist');
+
+$routes->get('deconnexion', 'EmployeController::deconnexion', ['filter' => 'auth']);
+$routes->get('logout', 'EmployeController::deconnexion', ['filter' => 'auth']);
 // ----------------------------------------------------------------
 // Page d'accueil → redirection vers login
 // ----------------------------------------------------------------

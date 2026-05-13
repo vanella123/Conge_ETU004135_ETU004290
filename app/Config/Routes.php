@@ -27,13 +27,6 @@ $routes->get('/', function () {
     return redirect()->to('/login');
 });
 
-// ----------------------------------------------------------------
-// Authentification (routes PUBLIQUES — pas de filtre)
-// ----------------------------------------------------------------
-$routes->get('/login',  'AuthController::loginForm');
-$routes->post('/login', 'AuthController::loginAction');
-$routes->get('/logout', 'AuthController::logout');
-
 // Routes employé (simplifiées) — utilisent EmployeController
 $routes->get('conges', 'EmployeController::listConges', ['filter' => 'auth']);
 $routes->get('conges/demande', 'EmployeController::congeForm', ['filter' => 'auth']);

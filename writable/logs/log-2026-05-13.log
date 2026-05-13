@@ -512,3 +512,19 @@ in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
 12 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
 13 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
 14 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+CRITICAL - 2026-05-13 09:04:49 --> Error: Class "App\Controllers\BaseController" not found
+[Method: GET, Route: conges/demande]
+in APPPATH/Controllers/EmployeController.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(315): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 5 SYSTEMPATH/Router/Router.php(792): class_exists()
+ 6 SYSTEMPATH/Router/Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 7 SYSTEMPATH/CodeIgniter.php(829): CodeIgniter\Router\Router->handle()
+ 8 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/vaa/S4/SI/Conge_ETU004135_ETU004290/public/index.php')

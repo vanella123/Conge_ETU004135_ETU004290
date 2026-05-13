@@ -34,6 +34,15 @@ $routes->get('/login',  'AuthController::loginForm');
 $routes->post('/login', 'AuthController::loginAction');
 $routes->get('/logout', 'AuthController::logout');
 
+// Routes employé (simplifiées) — utilisent EmployeController
+$routes->get('conges', 'EmployeController::listConges', ['filter' => 'auth']);
+$routes->get('conges/demande', 'EmployeController::congeForm', ['filter' => 'auth']);
+$routes->post('conges/demande', 'EmployeController::submitConge', ['filter' => 'auth']);
+$routes->get('conges/annuler/(:num)', 'EmployeController::cancelConge/$1', ['filter' => 'auth']);
+$routes->get('soldes', 'EmployeController::soldes', ['filter' => 'auth']);
+$routes->get('profil/edit', 'EmployeController::editProfile', ['filter' => 'auth']);
+$routes->post('profil/update', 'EmployeController::updateProfile', ['filter' => 'auth']);
+
 // ================================================================
 // Routes EMPLOYÉ  (accès : employe + rh + admin)
 // ================================================================

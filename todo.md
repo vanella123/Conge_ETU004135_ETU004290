@@ -16,6 +16,6 @@
                                 - checkEmployeExist   (Connexion)
                                 - CheckConnecte 
 - creation modele de l'employe 
-- creation DemandeController : 
+rajoute dans demandeController : 
                             - getAllDemande where id_employe = a celle connecte avec leur statut 
-                            - voir son solde de conges restant par type 
+rajoute dans solde : voir solde de conges restant par type de l'employe connecte 

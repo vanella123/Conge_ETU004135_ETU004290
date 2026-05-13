@@ -62,17 +62,18 @@ $routes->group('employe', ['filter' => 'auth|role:employe,rh,admin'], function (
 $routes->group('rh', ['filter' => 'auth|role:rh,admin'], function ($routes) {
 
     // Tableau de bord RH
-    $routes->get('dashboard', 'RH\DashboardController::index');
+    $routes->get('dashboard', 'Rh\DashboardController::index');
 
     // Gestion des demandes
-    $routes->get('demandes',                 'RH\DemandeController::index');
-    $routes->get('demandes/(:num)',          'RH\DemandeController::show/$1');
-    $routes->post('demandes/(:num)/approuver', 'RH\DemandeController::approve/$1');
-    $routes->post('demandes/(:num)/refuser',   'RH\DemandeController::refuse/$1');
+    $routes->get('demandes',                 'Rh\DemandesController::index');
+    $routes->post('demandes/approuver', 'Rh\DemandesController::approuver');
+    $routes->post('demandes/refuser',   'Rh\DemandesController::refuser');
 
+    // Gestion des employés
+    $routes->get('employes',            'Rh\EmployesController::index');
+    
     // Soldes employés
-    $routes->get('soldes',              'RH\SoldeController::index');
-    $routes->get('soldes/(:num)',       'RH\SoldeController::show/$1');
+    $routes->get('soldes',              'Rh\SoldeController::index');
 });
 
 // ================================================================
@@ -85,26 +86,26 @@ $routes->group('admin', ['filter' => 'auth|role:admin'], function ($routes) {
 
     // --- Gestion des employés ---
     $routes->get('employes',             'Admin\EmployeController::index');
-    $routes->get('employes/nouveau',     'Admin\EmployeController::create');
-    $routes->post('employes/nouveau',    'Admin\EmployeController::store');
-    $routes->get('employes/(:num)',      'Admin\EmployeController::edit/$1');
-    $routes->post('employes/(:num)',     'Admin\EmployeController::update/$1');
-    $routes->get('employes/(:num)/desactiver', 'Admin\EmployeController::deactivate/$1');
+    $routes->get('employes/ajouter',     'Admin\EmployeController::create');
+    $routes->post('employes/ajouter',    'Admin\EmployeController::store');
+    $routes->get('employes/edit/(:num)', 'Admin\EmployeController::edit/$1');
+    $routes->post('employes/edit/(:num)', 'Admin\EmployeController::update/$1');
+    $routes->get('employes/desactiver/(:num)', 'Admin\EmployeController::deactivate/$1');
 
     // --- Gestion des départements ---
     $routes->get('departements',           'Admin\DepartementController::index');
-    $routes->post('departements',          'Admin\DepartementController::store');
-    $routes->post('departements/(:num)',   'Admin\DepartementController::update/$1');
-    $routes->get('departements/(:num)/supprimer', 'Admin\DepartementController::delete/$1');
+    $routes->post('departements/ajouter',  'Admin\DepartementController::store');
+    $routes->post('departements/edit/(:num)',   'Admin\DepartementController::update/$1');
+    $routes->get('departements/supprimer/(:num)', 'Admin\DepartementController::delete/$1');
 
     // --- Types de congé ---
     $routes->get('types-conge',           'Admin\TypeCongeController::index');
-    $routes->post('types-conge',          'Admin\TypeCongeController::store');
-    $routes->post('types-conge/(:num)',   'Admin\TypeCongeController::update/$1');
+    $routes->post('types-conge/ajouter',  'Admin\TypeCongeController::store');
+    $routes->post('types-conge/edit/(:num)', 'Admin\TypeCongeController::update/$1');
 
     // --- Soldes annuels ---
     $routes->get('soldes',        'Admin\SoldeController::index');
-    $routes->post('soldes/init',  'Admin\SoldeController::initialize');
+    $routes->post('soldes/initialiser', 'Admin\SoldeController::initialize');
 
     // --- Vue globale des demandes ---
     $routes->get('demandes',      'Admin\DemandeController::index');
